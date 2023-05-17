@@ -3,7 +3,7 @@
     src: url(./Inter-VariableFont_slnt\,wght.ttf);
 }
 
-h1{
+html{
     font-family: Inter
 }
 
@@ -18,42 +18,64 @@ h1{
 }
 
 .main{
-    flex-wrap: wrap;
-    width: 350px;
+    
+    
    
 }
 
-
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 .field{
-    width: 80px;
-    height: 50px;
-    font-size: 55px;
+    width: 100%;
+    height: 32px;
+    font-size: 32px;
     border: 1px solid rgb(114, 114, 114) ;
-    border-radius: 11px;
-    flex-wrap: wrap;
-    margin:10px
+    border-radius: 8px;
+    margin:10px;
 
+}
+
+#fields{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
 }
 
 #formula-root{
     display: flex;
     flex-direction: row;
-    width: 350px;
+    
+    justify-content: center;
 }
 
-#blockDivision{
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    width: 50%
+#button{
+    height: 35px;
+    background-color: #3184FF;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: white;
+    width: 100%;
+   
 }
-#blockM{
-    display: flex;
-    flex-direction: row;
+
+#button:hover{
+    background-color: #3183ffad;
+}
+
+#F{
+    margin: 20px 0;
+    
+    font-size: 35px;
+    padding: 0 20px;
     
 }
-#blockR{
-    display: flex;
-    justify-content: center;
-    margin-left: 25px;
-}
+
+
+
+
+

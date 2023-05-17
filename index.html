@@ -8,27 +8,22 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="main">
-            <h1>Вычисление силы притяжения</h1>
-            <form>
-                <div id="formula-root">
-                    <div id="blockG">
-                        <input name="G" type="text" class="field" placeholder="G">
-                    </div>
-                    <div id="blockDivision">
-                        <div id="blockM">
-                            <input name="m1" type="text" class="field" placeholder="m1">
-                            <input name="m2" type="text" class="field" placeholder="m2">
-                        </div>
-                        <div id="blockR">
-                            <input name="R" type="text" class="field" placeholder="R">
-                        </div>
-                    </div>
+    <div class="container">  
+            <form id="form">
+                <h1>Вычисление силы притяжения</h1>
+                <div id="formula-root">     
+                    <div id="fields">
+                        <input name="m1" type="number" class="field" placeholder="m1" step="0.00001" required>*10^20
+                        <input name="m2" type="number" class="field" placeholder="m2" step="0.00001" required>*10^20
+                        <input name="R" type="number" class="field" placeholder="R" step="0.00001" required>*10^8
+                        <span id="F">F =<span id="result"></span></span>
+                        <input type="submit" value="Вычислить" id="button">
+                    </div>  
                 </div>
-            </form>
-        </div>
+            </form>   
+          
     </div>
+    <script src="./script.js"></script>
     
 </body>
 </html>
