@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Inter;
+    src: url(./Inter-VariableFont_slnt\,wght.ttf);
+}
+
+h1{
+    font-family: Inter
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    margin-top: -20vh;
+   
+}
+
+.main{
+    flex-wrap: wrap;
+    width: 350px;
+   
+}
+
+
+.field{
+    width: 80px;
+    height: 50px;
+    font-size: 55px;
+    border: 1px solid rgb(114, 114, 114) ;
+    border-radius: 11px;
+    flex-wrap: wrap;
+    margin:10px
+
+}
+
+#formula-root{
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+}
+
+#blockDivision{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 50%
+}
+#blockM{
+    display: flex;
+    flex-direction: row;
+    
+}
+#blockR{
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+}
